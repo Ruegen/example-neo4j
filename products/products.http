@@ -1,0 +1,17 @@
+@server = http://localhost:3000
+###
+GET {{server}}/products
+
+
+###
+GET {{server}}/products/21
+Content-Type: application/json
+
+
+###
+POST {{server}}/products
+Content-Type: application/json
+
+{
+    "name": "Apple Macintosh"
+}
